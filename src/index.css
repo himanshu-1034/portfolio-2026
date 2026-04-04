@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', system-ui, sans-serif;
+  
+  /* We will use CSS variables for theme colors so they can be injected by site config */
+  --color-primary: var(--theme-primary, #3b82f6);
+  --color-primary-hover: var(--theme-primary-hover, #2563eb);
+  
+  --color-background: var(--theme-background, #ffffff);
+  --color-background-secondary: var(--theme-background-secondary, #f3f4f6);
+  
+  --color-text-main: var(--theme-text-main, #111827);
+  --color-text-muted: var(--theme-text-muted, #4b5563);
+}
+
+@layer utilities {
+  .glass-panel {
+    background-color: color-mix(in srgb, var(--theme-background, #ffffff) 80%, transparent);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid color-mix(in srgb, var(--theme-text-main, #111827) 10%, transparent);
+  }
+
+  .text-glow {
+    text-shadow: 0 0 20px color-mix(in srgb, var(--theme-primary, #3b82f6) 40%, transparent);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text-main);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Base custom scrollbar optional */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-background); 
+}
+::-webkit-scrollbar-thumb {
+  background: color-mix(in srgb, var(--theme-primary, #3b82f6) 50%, transparent); 
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--theme-primary); 
+}
