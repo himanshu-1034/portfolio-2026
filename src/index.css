@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-sans: 'Montserrat', system-ui, sans-serif;
   
   /* We will use CSS variables for theme colors so they can be injected by site config */
   --color-primary: var(--theme-primary, #3b82f6);
