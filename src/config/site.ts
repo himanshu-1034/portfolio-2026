@@ -40,9 +40,9 @@ export const siteConfig = {
   // Hero Section
   hero: {
     name: "HIMANSHU ARORA",
-    role: "Frontend Engineer | React & TypeScript",
+    role: "Frontend Engineer | React, TypeScript & Golang",
     location: "India",
-    description: "Frontend Engineer with 3.5+ years of experience building scalable, user-focused web applications. Currently working on security-focused products, access control and role-based permission workflows.",
+    description: "Frontend Engineer with 4+ years of experience building scalable enterprise applications using React and TypeScript. Experienced in developing security-focused products, including role-based access control, developer platforms, and micro-frontend applications. Recently expanded into backend development with Go by building Backend for Frontend (BFF) APIs that aggregate and optimize data from multiple services. Enjoy collaborating across engineering and product teams to design maintainable solutions with a strong focus on architecture, performance, and user experience.",
     imageSrc: myPhoto, 
     primaryCta: {
       label: "View My Work",
@@ -57,31 +57,31 @@ export const siteConfig = {
   // About Section
   about: {
     title: "About Me",
-    biography: "Frontend Engineer with 3.5+ years of experience building scalable, user-focused web applications using React and TypeScript. Currently working on security-focused products, including access control and role-based permission workflows. Comfortable working across complex UI systems, design documentation, and micro-frontend setups, with a strong focus on clean architecture, performance, and maintainable frontend code.",
+    biography: "Frontend Engineer with 4+ years of experience building scalable enterprise applications using React and TypeScript. Experienced in developing security-focused products, including role-based access control, developer platforms, and micro-frontend applications. Recently expanded into backend development with Go by building Backend for Frontend (BFF) APIs that aggregate and optimize data from multiple services. Enjoy collaborating across engineering and product teams to design maintainable solutions with a strong focus on architecture, performance, and user experience.",
     skillsCategories: [
       {
         title: "Frontend",
-        skills: ["React.js", "TypeScript", "JavaScript (ES6+)", "HTML5", "CSS3", "Material UI"]
+        skills: ["React", "TypeScript", "JavaScript (ES6+)", "HTML5", "CSS3", "Material UI"]
+      },
+      {
+        title: "Backend",
+        skills: ["Golang", "REST APIs", "Backend for Frontend (BFF)"]
       },
       {
         title: "Architecture",
         skills: ["Micro-Frontends", "Webpack Module Federation", "Component-Based Architecture", "Design Systems"]
       },
       {
-        title: "Performance & Accessibility",
-        skills: ["Performance Optimization", "Virtualization", "Responsive Design", "Accessibility (a11y)"]
+        title: "Performance & Platform",
+        skills: ["Performance Optimization", "Virtualized Lists", "WebSockets", "D3.js"]
       },
       {
-        title: "Security & Platform",
-        skills: ["RBAC", "Access Control Workflows", "CSP", "Secure Frontend Practices"]
-      },
-      {
-        title: "Real-Time & Data",
-        skills: ["WebSockets", "D3.js"]
+        title: "Security",
+        skills: ["Role-Based Access Control (RBAC)", "Access Control Workflows", "Content Security Policy (CSP)"]
       },
       {
         title: "Workflow",
-        skills: ["Git", "Agile", "Code Reviews", "HLD Documentation"]
+        skills: ["Git", "Agile Development", "Code Reviews", "HLD Documentation", "Product Discussions"]
       }
     ],
     education: {
@@ -97,17 +97,32 @@ export const siteConfig = {
     title: "Work Experience",
     items: [
       {
+        role: "Developer (D3)",
+        company: "Arctic Wolf Networks",
+        location: "Bangalore",
+        period: "June 2026 – Present",
+        responsibilities: [
+          "Contributing to both frontend and backend development for the Access Control platform, expanding responsibilities beyond UI implementation.",
+          "Developed backend APIs in the Go-based Backend for Frontend (BFF) service, aggregating data from multiple upstream services, building bidirectional entity mappings, and introducing caching to improve response efficiency.",
+          "Developing the Arctic Wolf Developer Portal, delivering a unified experience for API discovery, documentation, and endpoint exploration.",
+          "Participating in product planning discussions to shape feature requirements before implementation and improve cross-functional collaboration.",
+          "Continuing to contribute to code reviews, frontend architecture discussions, and engineering best practices."
+        ]
+      },
+      {
         role: "D2 (Developer)",
         company: "Arctic Wolf Networks",
         location: "Bangalore",
-        period: "July 2025 – Present",
+        period: "July 2025 – May 2026",
         responsibilities: [
-          "Working on access control management UI enabling role-based access for users and groups.",
-          "Developing security-focused frontend workflows using React and TypeScript.",
-          "Created UI-level HLDs and technical design documentation to define flows and edge cases.",
+          "Contributed to the development and redesign of the Access Control module, implementing role-based access management workflows.",
+          "Developed security-focused frontend experiences using React and TypeScript.",
+          "Created UI-level HLD documentation to define user flows, states, and edge cases before implementation.",
+          "Reviewed UX wireframes and backend API contracts to identify gaps early and improve implementation quality.",
           "Contributed to a micro-frontend architecture using Webpack Module Federation.",
-          "Worked on a track-based UI preview mechanism to preview PR changes before merges.",
-          "Participating in code reviews and Agile development."
+          "Built a track-based UI preview mechanism for reviewing frontend changes before merges.",
+          "Contributed to the Assets Device Management, Tags Management, and Log Sources UI modules within the Unified Portal.",
+          "Participated in code reviews and Agile development."
         ]
       },
       {
